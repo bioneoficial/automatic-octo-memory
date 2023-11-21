@@ -47,7 +47,7 @@ dependencies {
 
     implementation project(':ModuleInterface')
     implementation project(':AuthInterface')
-
+    implementation project(':TVUIComponent')
     // Set this dependency to use JUnit 4 rules
     androidTestImplementation 'com.android.support.test:rules:0.4.1'
 
