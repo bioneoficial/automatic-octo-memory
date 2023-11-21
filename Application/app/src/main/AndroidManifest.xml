@@ -21,6 +21,7 @@ permissions and limitations under the License.
 
     <!-- Permission for getting voice command controls using media session -->
     <uses-permission android:name="com.amazon.permission.media.session.voicecommandcontrol"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
             android:allowBackup="true"
@@ -29,16 +30,32 @@ permissions and limitations under the License.
             android:icon="@drawable/app_logo"
             android:theme="@style/AppTheme"
             android:banner="@drawable/app_banner">
+
         <activity
-                android:name="com.amazon.android.tv.tenfoot.ui.activities.SplashActivity"
-                android:screenOrientation="landscape"
-                android:noHistory="true"
-                android:launchMode="singleTask">
+            android:name="com.amazon.android.tv.tenfoot.ui.activities.PhrasesActivity"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.amazon.android.tv.tenfoot.ui.activities.LoginActivity"
+            android:screenOrientation="landscape"
+            android:launchMode="singleTask">
+        </activity>
+
+        <activity
+                android:name="com.amazon.android.tv.tenfoot.ui.activities.SplashActivity"
+                android:screenOrientation="landscape"
+                android:noHistory="true"
+                android:launchMode="singleTask">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN"/>-->
+<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
+<!--                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>-->
+<!--            </intent-filter>-->
             <!-- Launcher integration intents -->
             <!-- Uncomment the below intent filters to enable launcher integration -->
             <!--

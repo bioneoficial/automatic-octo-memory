@@ -16,21 +16,12 @@
   "globalRecipes": [
     {
       "categories": {
-        "dataLoader": "recipes/LightCastDataLoaderRecipe1.json",
-        "dynamicParser": "recipes/LightCastCategoriesRecipe.json"
+        "dataLoader": "recipes/AquariusDataLoaderRecipe1.json",
+        "dynamicParser": "recipes/AquariusCategoriesRecipe.json"
       },
       "contents": {
-        "dataLoader": "recipes/LightCastDataLoaderRecipe1.json",
-        "dynamicParser": "recipes/LightCastContentsRecipe.json"
-      }
-    },
-    {
-      "categories": {
-        "name": "Hardcoded Category Name"
-      },
-      "contents": {
-        "dataLoader": "recipes/LightCastDataLoaderRecipe1.json",
-        "dynamicParser": "recipes/LightCastAllContentsRecipe.json"
+        "dataLoader": "recipes/AquariusDataLoaderRecipe1.json",
+        "dynamicParser": "recipes/AquariusContentsRecipe.json"
       }
     }
   ],
