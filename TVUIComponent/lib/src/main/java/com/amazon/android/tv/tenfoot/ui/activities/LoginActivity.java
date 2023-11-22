@@ -17,16 +17,13 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.login_activity);
         loadingView = findViewById(R.id.loading_view);
         showLoading((false));
-        // Start with the loading indicator visible if you're loading something initially
 //        showLoading(true);
 
         Button loginButton = (Button) findViewById(R.id.login_button);
         loginButton.setOnClickListener(view -> {
-            // Start the loading indicator before transitioning to the next activity
 //            showLoading(true);
 
-            // Your login logic here
-            // ...
+            // login logic here
 
             // If login is successful, transition to the next activity
             Intent intent = new Intent(LoginActivity.this, SplashActivity.class);
@@ -35,7 +32,6 @@ public class LoginActivity extends Activity {
             // Optionally, if you don't want to come back to LoginActivity on pressing back button
             finish();
         });
-        // Rest of your code...
     }
 
     private void showLoading(boolean show) {

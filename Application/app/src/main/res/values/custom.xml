@@ -23,9 +23,9 @@ permissions and limitations under the License.
     <!-- App colors -->
 
     <!-- The background color of the screens. -->
-    <color name="background">#EFD7AC</color>
+    <color name="background">#4F1039</color>
     <!-- Used for card background -->
-    <color name="card_background">#4F1039</color>
+    <color name="card_background">#EFD7AC</color>
     <!-- Background color of the progress bar -->
     <color name="playback_background_progress_bar">#FF373737</color>
     <!-- Color of buffered progress bar -->
