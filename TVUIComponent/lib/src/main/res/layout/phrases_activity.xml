@@ -4,7 +4,16 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:gravity="center"
-    android:background="@color/background">
+    android:background="#DE4A2A">
+
+    <ImageView
+        android:id="@+id/companyLogoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/company_logo"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        />
 
     <TextView
         android:id="@+id/tvPhrase"
@@ -12,7 +21,9 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:gravity="center"
-        android:text=""/>
+        android:text=""
+        android:visibility="gone"
+        android:textColor="#4F1039"/>
 
     <TextView
         android:id="@+id/tvAuthor"
@@ -21,6 +32,17 @@
         android:textSize="16sp"
         android:layout_below="@id/tvPhrase"
         android:gravity="center"
-        android:text=""/>
+        android:text=""
+        android:visibility="gone"
+        android:textColor="#ED9F37"/>
 
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAuthor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/app_logo"
+        android:visibility="gone"/>
 </RelativeLayout>
